@@ -5,6 +5,40 @@
 #EAEAEA Light
 */
 
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.layer {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #ff2e63 50%, #08d9d6 50%);
+  opacity: 0.2;
+  position: fixed;
+  right: -50%;
+  left: -50%;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.layer2 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(25%);
+  }
+}
+
 body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
@@ -13,16 +47,16 @@ body {
 
 h1 {
   text-align: center;
+  font-family: monospace;
 }
 
 .myname {
-  font-size: large;
+  font-size: 20px;
   text-align: right;
-  color: #087bd9;
-  font-weight: bold;
+  color: #c71c47;
+  font-weight: bolder;
   text-align: center;
   padding: 6px 20px;
-  text-decoration: none;
 }
 
 .grid-item {
@@ -80,11 +114,23 @@ nav {
   margin: auto;
   margin-top: 100px;
 }
+
+#about:hover {
+  background-image: linear-gradient(-60deg, #ff2e63 50%, #08d9d6 50%);
+}
+
+#about:hover h1 {
+  color: #252a34;
+  font-weight: bold;
+  font-size: 50px;
+}
 h1 {
   color: #ff2e63;
 }
 
 .about-info {
+  background-color: #252a34;
+  padding: 20px;
   font-weight: 500;
   color: #eaeaea;
 }
@@ -96,6 +142,19 @@ h1 {
   height: 100%;
   margin: auto;
   margin-top: 100px;
+}
+#work:hover h1 {
+  color: #252a34;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#work:hover {
+  background-image: linear-gradient(-60deg, #ff2e63 50%, #08d9d6 50%);
+}
+
+#work:hover .work-info {
+  background-color: #252a34;
 }
 
 .work-info {
@@ -126,7 +185,20 @@ h1 {
   margin: auto;
   margin-top: 100px;
 }
+#project:hover h1 {
+  color: #252a34;
+  font-weight: bold;
+  font-size: 50px;
+}
 
+#project:hover {
+  background-image: linear-gradient(-60deg, #ff2e63 50%, #08d9d6 50%);
+}
+
+#project:hover .project-info {
+  background-color: #252a34;
+  font-weight: bold;
+}
 .project-info {
   display: block;
   text-align: center;
@@ -159,6 +231,15 @@ h1 {
   height: 100%;
   margin: auto;
   margin-top: 100px;
+}
+#education:hover h1 {
+  color: #252a34;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#education:hover {
+  background-image: linear-gradient(-60deg, #ff2e63 50%, #08d9d6 50%);
 }
 
 .education-info {
@@ -214,6 +295,16 @@ h1 {
   margin: auto;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+
+#form:hover h1 {
+  color: #252a34;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#form:hover {
+  background-image: linear-gradient(-60deg, #ff2e63 50%, #08d9d6 50%);
 }
 
 .form-info {

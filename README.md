@@ -8,3 +8,5 @@ The website is already launched. In order to access you would need to enter the 
 
 https://stackoverflow.com/questions/41468951/images-not-displaying-in-github-pages
 https://stackoverflow.com/questions/48919200/github-pages-only-showing-readme-file
+
+https://www.w3schools.com/css/css3_animations.asp
